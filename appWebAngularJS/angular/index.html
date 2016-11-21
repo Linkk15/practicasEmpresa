@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ejemplo MEAN</title>
+	<title>Calculadora de colas</title>
 	<!-- Cargamos bootstrap -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<!-- Cargamos angular -->
@@ -51,7 +51,7 @@
 						<input type="text" class="form-control input-lg text-center" placeholder="Cola CPVC * 100 encoladuras" ng-model="newTubo.cola" required/>
 						-->
 						<label for="sel1">Diametro tubo:</label>
-						<select class="form-control" id="sel1" ng-model="newTubo.diametro">
+						<select class="form-control" id="sel1" ng-model="newTubo.diametro" convert-to-number>
 							<option value="16">16</option>
 							<option value="20">20</option>
 							<option value="25">25</option>
@@ -67,7 +67,7 @@
 						</select>
 						<br>
 						<label for="sel2">Cola CPVC * 100 encoladuras:</label>
-						<select class="form-control" id="sel2" ng-model="newTubo.cola">
+						<select class="form-control" id="sel2" ng-model="newTubo.cola" convert-to-number>
 							<option value="125">125</option>
 							<option value="250">250</option>
 							<option value="250">250</option>
