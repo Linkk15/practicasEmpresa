@@ -1,11 +1,9 @@
-MEAN_ejemplo
-============
+App sencilla para el calculo de cola HTA
 
-Sencillo ejemplo de una aplicación hecha en MEAN (Mongo-Express-Angular-Node)
+En ella se presenta un formulario con una tabla en la que mostramos los datos.
 
-Para poder ejecutar este proyecto teneis que:
-  1.- Instalar MongoDB
-  2.- Instalar express
-  3.- Instalar NodeJS
+En el formulario se piden 3 variables, dos fijas por un select que son el diametro del tubo, la cantidad de cola CPVC para 100 encoladuras y el numero de accesorios cualuquiera.
 
-Se recomienda ejecutar este proyecto en un Linux o Unix ya que la instalación de MongoDB y sobre todo de Express y NodeJS en un Sistema Operativo Windows es bastante tediosa.
+A partir de este formulario calculamos y mostramso en la tabla los datos, con la posibildad de modificarlos y borrarlos, teniendo en cuenta el total de los tubos registrados.
+
+Esta app esta realizada con el stack MEAN (MongoDB, Expressm AngularJs, Node) maquetada responsivamente con una Single Page Aplication(SPA)
