@@ -1,14 +1,15 @@
 {
-  "name"         : "calculadoraCola",
-  "version"      : "0.0.1",
-  "description"  : "Modulo para calcular la cantidad de cola",
-  "main"         : "server.js",
-  "author"       : "Adrian Parra",
-  "dependencies" : {
-    "express"    : "latest",
-    "mongoose"   : "latest"
+  "name": "calculadoraCola",
+  "version": "0.0.1",
+  "description": "Modulo para calcular la cantidad de cola",
+  "main": "server.js",
+  "author": "Adrian Parra",
+  "dependencies": {
+    "express": "~3.4.4",
+    "mongoose": "latest",
+    "bower": "latest"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/Linkk15/practicasEmpresa.git"
   },
@@ -16,5 +17,21 @@
   "homepage": "https://github.com/Linkk15/practicasEmpresa.git",
   "bugs": {
     "url": "https://github.com/Linkk15/practicasEmpresa.git"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.46",
+    "live-server": "^0.9.2"
+  },
+  "scripts": {
+    "postinstall": "jspm install",
+    "serve": "live-server ./app"
+  },
+  "jspm": {
+    "dependencies": {},
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }

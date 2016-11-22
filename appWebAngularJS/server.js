@@ -8,7 +8,7 @@ var port  	 = process.env.PORT || 8080; 			// Cogemos el puerto 8080
 mongoose.connect('mongodb://localhost:27017/EjemploMEAN'); 	// Hacemos la conexión a la base de datos de Mongo con diametro "MeanExample"
 
 app.configure(function() {
-	app.use(express.static(__dirname + '/angular')); 		
+	app.use(express.static(__dirname + '/angular'));
 	app.use(express.logger('dev')); 						// activamos el log en modo 'dev'
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
