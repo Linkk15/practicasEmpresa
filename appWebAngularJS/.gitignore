@@ -16,6 +16,12 @@
 # Node
 node_modules/
 
+#Bower
+bower_components/
+
+#JSM
+jspm_packages/
+
 # Mac
 .DS_Store
 
