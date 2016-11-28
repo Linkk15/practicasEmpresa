@@ -1,5 +1,5 @@
-angular.module('MainApp', [])
-
+angular.module('ngMaterial', ["ng", "ngAnimate", "ngAria"]);
+var miAngular = angular.module('MainApp', ['ngMaterial']);
 
 function mainController($scope, $http) {
 	$scope.newTubo = {};

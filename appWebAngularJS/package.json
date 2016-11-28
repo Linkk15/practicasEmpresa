@@ -5,9 +5,10 @@
   "main": "server.js",
   "author": "Adrian Parra",
   "dependencies": {
+    "angular-material": "^1.1.1",
+    "bower": "latest",
     "express": "~3.4.4",
-    "mongoose": "latest",
-    "bower": "latest"
+    "mongoose": "latest"
   },
   "repository": {
     "type": "git",

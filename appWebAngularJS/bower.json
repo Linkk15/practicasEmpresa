@@ -6,14 +6,6 @@
   "license": "ISC",
   "homepage": "https://github.com/Linkk15/practicasEmpresa.git",
   "moduleType": [],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "public//bower_components/",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "angular": "angularjs#^1.5.2",
     "angular-material": "^1.0.6",

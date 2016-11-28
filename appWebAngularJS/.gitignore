@@ -173,3 +173,5 @@ build/
 
 #NDK
 obj/
+app/style/
+app/assets/

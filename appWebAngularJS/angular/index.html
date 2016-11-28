@@ -4,27 +4,67 @@
 <html ng-app="MainApp">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<title>Calculadora de colas</title>
 	<!-- Cargamos bootstrap -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+	<link rel="stylesheet" href="/app/style/app.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Cargamos angular -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="../bower_components/angular/angular.js"></script>
-	<script src="../bower_components/angular-material/angular-material.js"></script>
-	<script src="../bower_components/angular-animate/angular-animate.js"></script>
-	<script src="../bower_components/angular-aria/angular-aria.js"></script>
-	<script src="../bower_components/angular-messages/angular-messages.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+	<!-- Angular Material Javascript now available via Google CDN; version 0.9.4 used here -->
+	<script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 	<!-- Cargamos el javascript de angular -->
 	<script src="core.js"></script>
 
 </head>
-<body ng-controller="mainController">
+<body ng-controller="mainController" ng-cloak layout="column">
+
+	<!-- Contenedor 1 -->
+	<md-toolbar layout="row" class="md-toolbar-tools">
+		<h1>Herramientas de cálculo | Jimten</h1>
+	</md-toolbar>
+
+	<!-- Contenedor 2 -->
+	<div flex layout="row">
+
+		<!-- Contenedor 3 -->
+		<md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+			<md-list>
+				<!-- List item #1 -->
+				<md-list-item>
+					<md-button>
+						<md-icon md-svg-icon="alarm" style="color: #0F0;" alt="Alarm Icon"></md-icon>
+						Calculadora Cola
+					</md-button>
+				</md-list-item>
+			</md-list>
+		</md-sidenav>
+
+		<!-- Container #4 -->
+		<md-content flex id="content">
+			<!-- User details sample -->
+
+			<md-icon md-svg-icon="alarm" style="color: #0F0;" alt="Alarm Icon"></md-icon>
+			<h2>Calculadora de cola</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula luctus, sollicitudin elit vel, pretium nibh. Fusce feugiat neque eget purus suscipit, pharetra tincidunt augue ultricies. Suspendisse varius nibh ut ornare semper. Aenean at risus eu nulla blandit faucibus non sed nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ultrices dolor sed sollicitudin mattis. Integer gravida dolor nec ligula tempor molestie non a tellus. Donec tincidunt, nibh sit amet consectetur convallis, ex velit facilisis magna, pulvinar accumsan lorem turpis eu nulla. Duis pretium, risus quis ornare hendrerit, felis ligula faucibus libero, sit amet placerat mauris libero nec diam. Curabitur luctus sagittis facilisis. Ut finibus tortor nisl, sit amet porta libero dignissim ac.
+
+				Praesent tincidunt mauris posuere efficitur luctus. Vestibulum finibus augue quis mi condimentum, vitae aliquam libero bibendum. Ut dignissim rhoncus elit, eget posuere nulla semper in. Pellentesque id sollicitudin purus. Nullam consequat urna ut pulvinar malesuada. In et neque ac odio sodales euismod viverra in justo. Sed sapien tellus, mattis a mi non, egestas pharetra massa. Vivamus maximus, dui eget elementum suscipit, enim quam facilisis tortor, ut accumsan dolor turpis et felis. In non tempor leo, ut ullamcorper urna. Duis non massa at massa venenatis commodo vel ut dolor. Mauris finibus consequat leo, eu vestibulum justo egestas et. Integer quis sagittis sem. Donec lorem turpis, feugiat dapibus volutpat at, imperdiet eu massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam erat sem, laoreet quis finibus eu, iaculis et arcu. Curabitur vitae mauris augue.
+			</p>
+		</md-content>
+	</div>
+<!--
 	<div class="container">
 
-		<div class="jumbotron text-center" ng-prueba>
+		<div class="jumbotron text-center">
 			<h1>Nº de Registros: <span class="label label-success">{{ tubos.length }}</span></h1>
 		</div>
 
@@ -57,6 +97,7 @@
 						<br>
 						<input type="text" class="form-control input-lg text-center" placeholder="Cola CPVC * 100 encoladuras" ng-model="newTubo.cola" required/>
 						-->
+						<!--
 						<label for="sel1">Diametro tubo:</label>
 						<select class="form-control" id="sel1" ng-model="newTubo.diametro" convert-to-number>
 							<option value="16">16</option>
@@ -93,6 +134,7 @@
 					</div>
 
 					<!-- Acciones que podemos realizar en el formulario -->
+					<!--
 					<button type="submit" class="btn btn-success btn-lg" ng-click="registrarTubo()" ng-disabled="myForm.$invalid || selected">Registrar</button>
 					<button type="submit" class="btn btn-warning btn-lg" ng-click="modificarTubo(newTubo)" ng-disabled="!newTubo.diametro || !newTubo.cola || !newTubo.accesorios || !selected">Modificar</button>
 					<button type="submit" class="btn btn-danger btn-lg" ng-click="borrarTubo(newTubo)" ng-disabled="!newTubo.diametro || !newTubo.cola || !newTubo.accesorios || !selected">Borrar</button>
@@ -100,5 +142,6 @@
 			</div>
 		</div>
 	</div>
+	-->
 </body>
 </html>
