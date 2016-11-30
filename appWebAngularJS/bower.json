@@ -1,0 +1,18 @@
+{
+  "name": "calculadoraCola",
+  "description": "Modulo para calcular la cantidad de cola",
+  "main": "server.js",
+  "author": "Adrian Parra",
+  "license": "ISC",
+  "homepage": "https://github.com/Linkk15/practicasEmpresa.git",
+  "moduleType": [],
+  "dependencies": {
+    "angular": "angularjs#^1.5.2",
+    "angular-material": "^1.0.6",
+    "angular-resource": "^1.5.2",
+    "angular-ui-router": "^0.2.18",
+    "angular-clipboard": "^1.3.0",
+    "ng-webworker": "^0.2.3",
+    "async": "^1.5.2"
+  }
+}

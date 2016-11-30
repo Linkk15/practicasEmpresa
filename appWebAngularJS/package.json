@@ -1,11 +1,22 @@
 {
-  "name"         : "ejemploMEAN",
-  "version"      : "0.0.1",
-  "description"  : "Sencilla app con MEAN",
-  "main"         : "server.js",
-  "author"       : "Ricardo Moya",
-  "dependencies" : {
-    "express"    : "~3.4.4",
-    "mongoose"   : "~3.6.2"
+  "name": "calculadoraCola",
+  "version": "0.0.1",
+  "description": "Modulo para calcular la cantidad de cola",
+  "main": "server.js",
+  "author": "Adrian Parra",
+  "dependencies": {
+    "angular-material": "^1.1.1",
+    "bower": "latest",
+    "express": "~3.4.4",
+    "mongoose": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linkk15/practicasEmpresa.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/Linkk15/practicasEmpresa.git",
+  "bugs": {
+    "url": "https://github.com/Linkk15/practicasEmpresa.git"
   }
 }
